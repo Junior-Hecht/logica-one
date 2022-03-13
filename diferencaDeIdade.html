@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var minhaIdade = 37;
+      var idadeDoMeuIrmao = 17;
+
+      function pulaLinha() {
+        document.write("<br>");
+      }
+      function diferencaIdade(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      diferencaIdade("Meu irmão tem, " + idadeDoMeuIrmao + " anos de idade.");
+      diferencaIdade("Eu tenho, " + minhaIdade + " anos de idade.");
+      diferencaIdade(
+        "Nossa diferença de idade é de, " +
+          (minhaIdade - idadeDoMeuIrmao) +
+          " anos."
+      );
+    </script>
+  </body>
+</html>

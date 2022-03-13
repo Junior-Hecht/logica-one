@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media de Idades</title>
+  </head>
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      var totalEventos = parseInt(prompt("Informe o total de eventos"));
+
+      var totalGastoComEvemtos = 0;
+
+      var contador = 1;
+
+      while (contador <= totalEventos) {
+        var gasto = parseFloat(prompt("Informe o gasto com o evento"));
+        totalGastoComEvemtos = totalGastoComEvemtos + gasto;
+        contador++;
+      }
+
+      var media = totalGastoComEvemtos / totalEventos;
+
+      mostra("A média de gastos é " + media);
+    </script>
+  </body>
+</html>

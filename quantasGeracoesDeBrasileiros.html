@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var idadeMediaQuandoTemFilhos = 28;
+      var anoAtual = 2022;
+      var mediaGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+      function pulaLinha() {
+        document.write("<br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+      }
+
+      mostra(
+        "A media de gerações de Brasileiros desde o descobrimento do país é de: " +
+          mediaGeracoes +
+          "."
+      );
+    </script>
+  </body>
+</html>
